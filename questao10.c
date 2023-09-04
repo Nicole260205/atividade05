@@ -26,8 +26,9 @@ main(){
     delta = B * B - 4 * A * C;
 
 
-
-    if(delta < 0){
+    if (A == 0){
+        printf("Nao e equacao de segundo grau");
+    }else if(delta < 0){
         printf("Nao existe raiz\n");
     }else if(delta == 0){
         x1 = -B / (2 * A);
